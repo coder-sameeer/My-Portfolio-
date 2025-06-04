@@ -1,0 +1,324 @@
+* {
+   margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    overflow: none;
+}
+html , body{
+ max-width: 100%;
+ overflow-x:hidden ;
+}
+
+.logo {
+    color: blueviolet;
+    margin-left: 20px;
+    font-weight:bold;
+    display: flex;
+    align-items: center
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+    box-shadow: 5px 5px 15px blueviolet;
+    margin-top: 10px;
+    border-radius: 30px;
+    height: 50px;
+    border-radius: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-items: center;
+    border-radius: 40px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10vw;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: blueviolet;
+    margin: 15px;
+    padding: 5px;
+    transition: .3s ease;
+    transition-duration: .3s;
+}
+
+header nav ul li a:hover {
+    background-color:blueviolet;
+    color: black;
+    border-radius: 10px;
+    transition-delay: 0.2s;
+}
+
+body {
+    background:white;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15vh;
+    width: 100vw;
+}
+
+.container .box1 {
+    color: black;
+    font-size: 30px;
+    opacity: 0;
+    animation: show 2s ease forwards;
+    animation-delay: 0.5s;
+    width: 50vw;
+}
+.container .box1 span {
+    color: blueviolet;
+}
+.container .box1 .social a ion-icon{
+    color:blueviolet;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 50px;
+}
+.container .box1 .social ion-icon:hover{
+    font-size: 60px;
+    transition-duration:.5s;
+}
+.container .box2 img {
+    width: 20vw;
+    border-radius: 100%;
+    box-shadow: 10px 10px 15px blueviolet;
+    opacity: 0;
+    animation: anime2 3s 1.5s forwards;
+}
+
+@keyframes show {
+    to {
+        transform: translateX(20px);
+        opacity: 1;
+    }
+}
+
+@keyframes anime2 {
+    to {
+        opacity: 1;
+    }
+}
+
+.container .box1 p {
+    font-size: 15px;
+    opacity: 0;
+    animation: anime2 3s 1.5s forwards;
+}
+
+#about {
+    color: black;
+    background:white;
+    margin-top: 30vh;
+    height: 70vh;
+    width: 60vw;
+    padding: 20px;
+    opacity: 0;
+    animation: move forwards;
+    animation-timeline: view();
+    animation-range: entry 30%;
+}
+
+#about h1 {
+    margin: 20px;
+    color:blueviolet;
+}
+#about h3{
+    color: blueviolet;
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        box-shadow: 30px -30px 0px blueviolet;
+        opacity: 1;
+        transform: translatex(50px);
+    }
+}
+
+#feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 800px;
+}
+#feedback form h1{
+ color: blueviolet;
+}
+
+#feedback form {
+    text-align: center;
+    padding: 20px;
+    background-color:white;
+    border-radius: 20px;
+    height: 500px;
+    width: 25vw;
+    opacity: 0;
+    animation: anime3 ease forwards;
+    animation-timeline: view();
+    animation-range: entry 60%;
+} 
+@keyframes anime3{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+        box-shadow: 3px 3px 5px blueviolet;
+        color:black;
+    
+    }
+    100%{
+        opacity: 1;
+        box-shadow: 3px 3px 5px blueviolet;
+        color: black;
+    }
+}
+
+#feedback form input {
+    margin-top: 30px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px blueviolet;
+    color:blueviolet;
+    width: 70%;
+    height: 8%;
+}
+
+#feedback form input::placeholder {
+    color: blueviolet;
+}
+
+#feedback form textarea {
+    margin-top: 20px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px blueviolet;
+    color:blueviolet;
+    width: 70%;
+    height: 35%;
+    padding: 10px;
+}
+
+#feedback form textarea::placeholder {
+    color: blueviolet;
+}
+
+#feedback form button {
+    background: white;
+    color: blueviolet;
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    border:none;
+    box-shadow: 3px 3px 5px blueviolet ;
+    font-size: medium;
+    border-radius: 30px;
+    transition: 0.5s ease;
+    transition-delay: 0s;
+}
+
+#feedback form button:hover {
+    background-color: blueviolet;
+    color: black;
+    box-shadow: 0px 0px 10px blueviolet;
+    transition-delay: 0.2s;
+}
+footer{
+    width: 100vw;
+    height: 40vh;
+    background-color:whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer #contacts a{
+    display:block;
+    flex-direction: column;
+    color: black;
+    font-size:20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#contacts a:hover{
+ font-size: 30px;
+ transition-duration: .5s;
+}
+#contacts a ion-icon{
+ font-size: 35px;
+}
+footer p{
+    font-size: 20px;
+}
+/*responsive*/
+@media (max-width:768px){
+ nav a{
+ visibility:hidden;
+}
+.container .box1{
+ width:90vw;
+}
+.container .box1 a{
+ padding: 5px;
+}
+.container{
+ margin-top: 5vh;
+}
+.container .box1 h1{
+ font-size: 10vw;
+}
+.container .box1 p{
+ font-size: 5vw;
+}
+.container .box2 img{
+ display: none;
+}
+#about{
+ height: 100vh;
+}
+#about h1{
+ font-size: 10vw;
+}
+#about p{
+ font-size: 5vw;
+}
+#feedback form{
+ width: 60vw;
+}
+footer{
+ display:inline-block;
+ align-items: center;
+ justify-content: center;
+ padding-left:15vw;
+}
+footer #contacts{
+ margin-top:5vh;
+}
+footer .msg p{
+ font-size: 4vw;
+ margin-top: 3vh;
+}
+}
