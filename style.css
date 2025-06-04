@@ -162,7 +162,11 @@ body {
     height: 800px;
 }
 #feedback form h1{
- color: blueviolet;
+    color: blueviolet;
+    opacity: 0;
+    animation: anime3 ease forwards;
+    animation-timeline: view();
+    animation-range: entry 60%;
 }
 
 #feedback form {
@@ -200,7 +204,10 @@ body {
     background-color: transparent;
     border: 2px solid white;
     border-radius: 20px;
-    box-shadow: 3px 3px 5px blueviolet;
+    opacity: 0;
+    animation: anime3 ease forwards;
+    animation-timeline: view();
+    animation-range: entry 60%;
     color:blueviolet;
     width: 70%;
     height: 8%;
@@ -216,7 +223,10 @@ body {
     background-color: transparent;
     border: 2px solid white;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px blueviolet;
+    opacity: 0;
+    animation: anime3 ease forwards;
+    animation-timeline: view();
+    animation-range: entry 60%;
     color:blueviolet;
     width: 70%;
     height: 35%;
@@ -234,7 +244,10 @@ body {
     padding: 10px;
     margin-top: 10px;
     border:none;
-    box-shadow: 3px 3px 5px blueviolet ;
+    opacity: 0;
+    animation: anime3 ease forwards;
+    animation-timeline: view();
+    animation-range: entry 60%;
     font-size: medium;
     border-radius: 30px;
     transition: 0.5s ease;
