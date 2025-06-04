@@ -317,6 +317,9 @@ footer{
 footer #contacts{
  margin-top:5vh;
 }
+footer #contacts a:hover{
+ font-size:25px;
+}
 footer .msg p{
  font-size: 4vw;
  margin-top: 3vh;
