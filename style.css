@@ -264,7 +264,7 @@ footer #contacts a{
     text-decoration: none;
 }
 #contacts a:hover{
- font-size: 30px;
+ font-size: 25px;
  transition-duration: .5s;
 }
 #contacts a ion-icon{
@@ -316,9 +316,6 @@ footer{
 }
 footer #contacts{
  margin-top:5vh;
-}
-#contacts a:hover{
- font-size:10px;
 }
 footer .msg p{
  font-size: 4vw;
