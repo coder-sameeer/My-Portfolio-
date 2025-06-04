@@ -164,9 +164,6 @@ body {
 #feedback form h1{
     color: blueviolet;
     opacity: 0;
-    animation: anime3 ease forwards;
-    animation-timeline: view();
-    animation-range: entry 60%;
 }
 
 #feedback form {
