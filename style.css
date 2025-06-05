@@ -86,7 +86,7 @@ body {
 }
 .container .box1 .social a ion-icon{
     color:blueviolet;
-    margin-top:50px 20px;
+    margin:50px 20px;
     font-size: 50px;
 }
 .container .box1 .social ion-icon:hover{
