@@ -166,7 +166,7 @@ body {
     background-color:white;
     border-radius: 20px;
     height: 500px;
-    width: 50vw;
+    width: 40vw;
     opacity: 0;
     animation: anime3 ease forwards;
     animation-timeline: view();
