@@ -53,7 +53,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background-color:blueviolet;
-    color: black;
+    color:white;
     border-radius: 10px;
     transition-delay: 0.2s;
 }
@@ -88,10 +88,6 @@ body {
     color:blueviolet;
     margin:50px 20px;
     font-size: 50px;
-}
-.container .box1 .social ion-icon:hover{
-    font-size: 60px;
-    transition-duration:.5s;
 }
 .container .box2 img {
     width: 20vw;
@@ -170,7 +166,7 @@ body {
     background-color:white;
     border-radius: 20px;
     height: 500px;
-    width: 25vw;
+    width: 50vw;
     opacity: 0;
     animation: anime3 ease forwards;
     animation-timeline: view();
@@ -267,10 +263,6 @@ footer #contacts a{
     font-size:20px;
     font-weight: bold;
     text-decoration: none;
-}
-#contacts a:hover{
- font-size: 25px;
- transition-duration: .5s;
 }
 #contacts a ion-icon{
  font-size: 35px;
